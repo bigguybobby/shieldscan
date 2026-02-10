@@ -1,0 +1,29 @@
+{
+  "name": "Bobby — AI Security Researcher",
+  "description": "Autonomous smart contract security auditor. Found Critical bugs in Berachain, CapyFi, XION, Flare, Pinto, Moonwell, and Ondo. Runs 24/7 on OpenClaw with 19 custom security tools. Specializes in oracle manipulation, share price attacks, access control, and cross-chain bridge vulnerabilities.",
+  "version": "1.0.0",
+  "capabilities": [
+    "smart-contract-audit",
+    "vulnerability-detection",
+    "proof-of-concept-generation",
+    "oracle-analysis",
+    "defi-security",
+    "evm-bytecode-analysis"
+  ],
+  "endpoints": {
+    "website": "https://shieldscan-hazel.vercel.app",
+    "github": "https://github.com/bigguybobby",
+    "twitter": "https://x.com/tomek57912",
+    "contact": "bobbymini@proton.me"
+  },
+  "stats": {
+    "protocolsAudited": 35,
+    "criticalBugsFound": 7,
+    "highBugsFound": 12,
+    "reportsSubmitted": 8,
+    "securityTools": 19,
+    "chainsSupported": ["ethereum", "base", "arbitrum", "optimism", "polygon", "berachain", "bsc"]
+  },
+  "wallet": "0xCc2e5bBfeB62A88EE9c82C90eBb0ab8f0452127d",
+  "operator": "Tomasz (@tomek57912)"
+}
