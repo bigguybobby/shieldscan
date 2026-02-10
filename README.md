@@ -1,36 +1,133 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛡️ ShieldScan
 
-## Getting Started
+**AI-Powered Smart Contract Security Scanner**
 
-First, run the development server:
+A professional security analysis platform for smart contracts that provides comprehensive vulnerability detection in minutes, not weeks.
+
+## 🚀 Features
+
+- **Landing Page** with hero section, stats, how it works, pricing, and recent scans
+- **Scanner Page** with multiple input methods (contract address, GitHub URL, or paste code)
+- **Professional Report Page** with detailed findings and remediation steps
+- **Multi-Chain Support**: Ethereum, BSC, Polygon, Arbitrum, Optimism, Base, Berachain
+- **Dark Security Theme** with terminal-style aesthetics
+- **Fully Responsive** mobile design
+
+## 🛠️ Tech Stack
+
+- **Next.js 14** (App Router)
+- **TypeScript**
+- **Tailwind CSS v4**
+- **shadcn/ui** components
+- **Vercel** (ready for deployment)
+
+## 📦 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ installed
+- npm or yarn package manager
+
+### Installation
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+shieldscan/
+├── src/
+│   ├── app/
+│   │   ├── page.tsx              # Landing page
+│   │   ├── scan/
+│   │   │   └── page.tsx          # Scanner page
+│   │   ├── report/
+│   │   │   └── [id]/
+│   │   │       └── page.tsx      # Report page
+│   │   ├── layout.tsx            # Root layout
+│   │   └── globals.css           # Global styles
+│   ├── components/
+│   │   └── ui/                   # shadcn/ui components
+│   └── lib/
+│       └── utils.ts              # Utility functions
+├── public/                       # Static assets
+└── README.md
+```
 
-## Learn More
+## 🎨 Design Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Dark Theme**: Professional security aesthetic with dark blues and greens
+- **Terminal Styling**: Monospace fonts for code and addresses
+- **Glowing Effects**: Cyan and green glows for emphasis
+- **Border Animations**: Subtle glowing borders on cards
+- **Responsive Grid**: Mobile-first responsive design
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔐 Mock Security Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The MVP includes mock/demo functionality:
 
-## Deploy on Vercel
+- **Mock Scan Results**: Pre-defined vulnerability findings
+- **Sample Reports**: Example security audit reports
+- **Demo Findings**: 5 example vulnerabilities (Critical to Info)
+- **Recent Scans**: Mock data with real protocol names
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚢 Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Deploy to Vercel
+
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+```
+
+Or connect your GitHub repo to Vercel for automatic deployments.
+
+## 🔮 Future Enhancements
+
+- [ ] Supabase integration for auth & scan history
+- [ ] Real security tool integration (Slither, Mythril, etc.)
+- [ ] PDF report generation
+- [ ] API endpoint for programmatic scans
+- [ ] User dashboard
+- [ ] Team collaboration features
+- [ ] Proof of Concept (PoC) exploit generation
+
+## 👨‍💻 Built By
+
+Security researchers who found **Critical bugs** in:
+- Berachain
+- CapyFi
+- XION
+- Flare
+- Pinto
+
+## 📱 Connect
+
+- GitHub: [github.com/shieldscan](https://github.com)
+- Twitter: [@tomek57912](https://twitter.com/tomek57912)
+- Email: contact@shieldscan.io
+
+## 📄 License
+
+MIT License - feel free to use this project as a template.
+
+---
+
+**Built with Next.js 14, TypeScript, and Tailwind CSS**
