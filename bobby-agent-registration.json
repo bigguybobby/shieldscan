@@ -12,9 +12,20 @@
   ],
   "endpoints": {
     "website": "https://shieldscan-hazel.vercel.app",
+    "api": "https://shieldscan-hazel.vercel.app/api",
     "github": "https://github.com/bigguybobby",
     "twitter": "https://x.com/tomek57912",
     "contact": "bobbymini@proton.me"
+  },
+  "x402": {
+    "enabled": true,
+    "network": "eip155:8453",
+    "currency": "USDC",
+    "endpoints": {
+      "GET /api/scan": { "price": "$1.00", "description": "AI-powered smart contract security scan" },
+      "POST /api/quick-check": { "price": "$0.10", "description": "Quick vulnerability pattern check" },
+      "POST /api/full-audit": { "price": "$5.00", "description": "Comprehensive AI security audit report" }
+    }
   },
   "stats": {
     "protocolsAudited": 35,
@@ -24,6 +35,13 @@
     "securityTools": 19,
     "chainsSupported": ["ethereum", "base", "arbitrum", "optimism", "polygon", "berachain", "bsc"]
   },
-  "wallet": "0xCc2e5bBfeB62A88EE9c82C90eBb0ab8f0452127d",
-  "operator": "Tomasz (@tomek57912)"
+  "wallet": "0x56808098c91b2345607db04730Fb47B08f7cB09b",
+  "paymentAddress": "0x56808098c91b2345607db04730Fb47B08f7cB09b",
+  "operator": "Tomasz (@tomek57912)",
+  "erc8004": {
+    "chain": "base",
+    "chainId": 8453,
+    "agentId": 16699,
+    "registry": "0x8004A169FB4a3325136EB29fA0ceB6D2e539a432"
+  }
 }
